@@ -23,7 +23,7 @@ class PresentationsTableSeeder extends Seeder
                 'city' => 'Chicago',
                 'year' => '2017',
                 'link' => 'praesent-tristique-gravida',
-                'image' => 'presentation1.jpg',
+                'image' => 'presentation.jpg',
                 'order' => '1'
             ],
             [
@@ -34,7 +34,7 @@ class PresentationsTableSeeder extends Seeder
                 'city' => 'Chicago',
                 'year' => '2017',
                 'link' => 'praesent-tristique-gravida',
-                'image' => 'presentation1.jpg',
+                'image' => 'presentation.jpg',
                 'order' => '2'
             ],
             [
@@ -45,7 +45,7 @@ class PresentationsTableSeeder extends Seeder
                 'city' => 'Chicago',
                 'year' => '2017',
                 'link' => 'praesent-tristique-gravida',
-                'image' => 'presentation1.jpg',
+                'image' => 'presentation.jpg',
                 'order' => '3'
             ]
         ]);
