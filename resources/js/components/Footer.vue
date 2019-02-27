@@ -7,7 +7,7 @@
 		<div class="p row">
 			<div class="bs app-footer-social text-center col-12">
 				<a :href="twitterShareLink" target="_blank">
-					<img :src="twitterIcon" alt="Twitter Icon @angecramer" class="bk img-fluid">
+					<img :src="revealPath(twitterIcon, 'img')" alt="Twitter Icon @angecramer" class="bk img-fluid">
 				</a>			
 			</div>
 		</div>
@@ -32,7 +32,14 @@
 
 
 <script>
+    import { imageMixin } from "../mixins/imageMixin.js";
+
+
 	export default {
+        mixins: [
+            imageMixin
+        ],
+
 		props: [
             'twitterIcon',
             'homeUrl'
