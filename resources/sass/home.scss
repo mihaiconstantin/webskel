@@ -1,0 +1,18 @@
+@import './bootstrap';
+
+
+#app {
+    overflow: hidden;
+
+    section {
+        margin-bottom: 1.5rem;
+
+        > .row {
+            padding: 1.5rem 0;
+        }
+    }
+
+    .app-section-title {
+        color: $app-black;
+    }
+}
