@@ -31,6 +31,11 @@ class SettingsTableSeeder extends Seeder
             ],
             [
                 'context' => 'all',
+                'key' => 'username',
+                'value' => 'angecramer'
+            ],
+            [
+                'context' => 'all',
                 'key' => 'linkProjects',
                 'value' => '/blog/category/projects'
             ],
