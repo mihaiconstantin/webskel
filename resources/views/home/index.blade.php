@@ -44,11 +44,11 @@
                     </template>
                     
                     <template v-slot:social>
-                        <app-contact-social username="angecramer" height="550"></app-contact-social>
+                        <app-contact-social username="{{ $username }}" height="550"></app-contact-social>
                     </template>
                 </app-contact>
                 
-                <app-footer twitter-icon="img/twitter.png" home-url="/"></app-footer>
+                <app-footer twitter-icon="{{ $twitter }}" home-url="#app-carousel"></app-footer>
             
             </div>
 
