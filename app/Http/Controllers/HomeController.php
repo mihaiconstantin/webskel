@@ -14,11 +14,7 @@ use App\Models\ContactInfo;
 
 class HomeController extends Controller
 {
-    /**
-     * Fetch the data for all sections on the landing page at once.
-     *
-     * @return array
-     */
+    // Landing page.
     public function index() 
     {
         $data = array(

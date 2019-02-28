@@ -19,12 +19,10 @@
 
 
 @section('content')
-
-
     <div id="app" v-cloak>
         <template>
 
-            <app-navigation :links="{{ $links }}" active-scroll="true"></app-navigation>
+            <app-navigation :links="{{ $links }}" active-scroll="true" trigger="#app-about"></app-navigation>
             
             <div class="b container-fluid">
 
