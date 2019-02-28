@@ -1,7 +1,7 @@
 <template>
     <section id="app-about" class="r">
 
-        <div class="p col-12 text-left app-section-title">
+        <div class="p col-12 text-left app-section-title" data-aos="fade-left">
             <h1 class="display-3">About</h1>
         </div>
 
