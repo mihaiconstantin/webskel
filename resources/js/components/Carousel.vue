@@ -4,7 +4,7 @@
         <div id="vue-particles" :style="{ backgroundColor: item.color }" class="r row">
             
             <div class="p carousel-avatar drop">
-                <img :src="revealPath(item.image, 'img')" alt="Avatar Image" draggable="false" class="img-fluid rounded-circle pulse">
+                <img :src="revealPath(item.image, 'storage/img')" alt="Avatar Image" draggable="false" class="img-fluid rounded-circle pulse">
             </div>
 
             <div class="p carousel-information d-none d-lg-block text-center fade-in-right">

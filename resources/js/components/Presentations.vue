@@ -13,7 +13,7 @@
 					<div v-for="presentation in items" :key="presentation.id" class="o text-center col-sm-12 col-md-10 col-lg-4" data-aos="fade-down">
                         <div class="regularShadow card">
     
-                            <img :src="revealPath(presentation.image, 'img')" class="card-img-top" :alt="presentation.title">
+                            <img :src="revealPath(presentation.image, 'storage/img')" class="card-img-top" :alt="presentation.title">
 
                             <div class="card-body">
                                 

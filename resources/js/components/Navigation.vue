@@ -1,10 +1,11 @@
 <template>
     <div id="app-navigation">
-
-        <nav id="navbar" class="r navbar navbar-expand-sm fixed-top navbar-light bg-app-navbar" data-aos="fade" data-aos-anchor="#app-about">
+        <nav id="navbar" class="r navbar navbar-expand-sm fixed-top navbar-light bg-app-navbar" 
+            :data-aos="anchorTrigger ? 'fade' : false" 
+            :data-aos-anchor="anchorTrigger">
 
 			<a v-if="navLogo" class="bg navbar-brand" href="#app-carousel">
-				<img :src="navLogo" alt="Navigation Logo" class="img-fluid">
+				<img :src="revealPath(navLogo, 'storage/img')" alt="Navigation Logo" class="img-fluid">
 			</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +32,15 @@
 
 
 <script>
+    import { imageMixin } from '../mixins/imageMixin.js';
+
+
     export default {
+        mixins: [
+            imageMixin,
+        ],
+
+
         props: {
             links: Array,
             logo: {
@@ -42,10 +51,14 @@
                 required: false,
                 type: String
             },
+            
+            // `trigger` prop is used to control the navbar animation on scroll.
             trigger: {
                 required: false,
                 type: String
             },
+            
+            // `activeScroll` prop is used for setting the active class on navbar links based on the scroll position.
             activeScroll: {
                 required: false,
                 type: String
