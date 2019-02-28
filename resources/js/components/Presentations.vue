@@ -97,16 +97,15 @@
         
         .card {
             border: 0;
-            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
             border-radius: .5rem;
             margin-top: 1.5rem;
             background-color: $app-client-turquoise;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
             &:hover {
                 @include material_shadow_md;
 
                 .card-title {
-                    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
                     color: $app-client-white;
                 }
 
