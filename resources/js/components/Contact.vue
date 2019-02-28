@@ -9,7 +9,7 @@
         <!-- Contact content. -->
         <div id="contact-content" class="p row justify-content-center">
             <div class="s col-11">
-                <div class="o content row align-items-center">
+                <div class="o content row align-items-start">
                     
                     <!-- Contact info. -->
                     <div id="contact-info" class="g col-lg-4" data-aos="zoom-in-down">
