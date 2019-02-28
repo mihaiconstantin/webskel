@@ -11,7 +11,7 @@
 
 
 @section('styles')
-    @include('partials._styles_post_index')
+    @include('partials._styles_blog_post')
 @endsection
 
 
@@ -36,5 +36,5 @@
 
 
 @section('scripts')
-    @include('partials._scripts_post_index')
+    @include('partials._scripts_blog_post')
 @endsection
