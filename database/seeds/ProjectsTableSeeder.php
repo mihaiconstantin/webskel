@@ -17,7 +17,7 @@ class ProjectsTableSeeder extends Seeder
         [
             [
                 'context' => 'home.index',
-                'title' => 'Project 1',
+                'title' => 'Lorem ipsum dolor sit amet consectetur adipisicing',
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati totam in itaque, suscipit aperiam sit voluptatum dolore quos at et! Maiores eius ducimus nisi cumque aspernatur praesentium voluptates in accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium ad quaerat totam. Tempora nihil quisquam sed nobis rerum suscipit soluta, quo fugiat corrupti dignissimos! At, ut. Dolor, accusantium recusandae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi veritatis illo quidem sapiente maxime animi mollitia iure, iste officia! Commodi, facere sint? Corporis officia quod debitis dolorem necessitatibus. Debitis, nisi.',
                 'link' => 'praesent-tristique-gravida',
                 'grant' => 'VENI',
@@ -27,7 +27,7 @@ class ProjectsTableSeeder extends Seeder
             ],
             [
                 'context' => 'home.index',
-                'title' => 'Project 2',
+                'title' => 'Lorem ipsum dolor sit amet consectetur adipisicing',
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati totam in itaque, suscipit aperiam sit voluptatum dolore quos at et! Maiores eius ducimus nisi cumque aspernatur praesentium voluptates in accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium ad quaerat totam. Tempora nihil quisquam sed nobis rerum suscipit soluta, quo fugiat corrupti dignissimos! At, ut. Dolor, accusantium recusandae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi veritatis illo quidem sapiente maxime animi mollitia iure, iste officia! Commodi, facere sint? Corporis officia quod debitis dolorem necessitatibus. Debitis, nisi.',
                 'link' => 'praesent-tristique-gravida-ligula',
                 'grant' => 'ERC',
@@ -37,7 +37,7 @@ class ProjectsTableSeeder extends Seeder
             ],
             [
                 'context' => 'home.index',
-                'title' => 'Project 3',
+                'title' => 'Lorem ipsum dolor sit amet consectetur adipisicing',
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati totam in itaque, suscipit aperiam sit voluptatum dolore quos at et! Maiores eius ducimus nisi cumque aspernatur praesentium voluptates in accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium ad quaerat totam. Tempora nihil quisquam sed nobis rerum suscipit soluta, quo fugiat corrupti dignissimos! At, ut. Dolor, accusantium recusandae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi veritatis illo quidem sapiente maxime animi mollitia iure, iste officia! Commodi, facere sint? Corporis officia quod debitis dolorem necessitatibus. Debitis, nisi.',
                 'link' => 'praesent-tristique-gravida-ligula',
                 'grant' => 'ERC',
@@ -47,7 +47,7 @@ class ProjectsTableSeeder extends Seeder
             ],
             [
                 'context' => 'home.index',
-                'title' => 'Project 4',
+                'title' => 'Lorem ipsum dolor sit amet consectetur adipisicing',
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati totam in itaque, suscipit aperiam sit voluptatum dolore quos at et! Maiores eius ducimus nisi cumque aspernatur praesentium voluptates in accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium ad quaerat totam. Tempora nihil quisquam sed nobis rerum suscipit soluta, quo fugiat corrupti dignissimos! At, ut. Dolor, accusantium recusandae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi veritatis illo quidem sapiente maxime animi mollitia iure, iste officia! Commodi, facere sint? Corporis officia quod debitis dolorem necessitatibus. Debitis, nisi.',
                 'link' => 'praesent-tristique-gravida-ligula',
                 'grant' => 'ERC',
@@ -57,7 +57,7 @@ class ProjectsTableSeeder extends Seeder
             ],
             [
                 'context' => 'home.index',
-                'title' => 'Project 5',
+                'title' => 'Lorem ipsum dolor sit amet consectetur adipisicing',
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati totam in itaque, suscipit aperiam sit voluptatum dolore quos at et! Maiores eius ducimus nisi cumque aspernatur praesentium voluptates in accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium ad quaerat totam. Tempora nihil quisquam sed nobis rerum suscipit soluta, quo fugiat corrupti dignissimos! At, ut. Dolor, accusantium recusandae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi veritatis illo quidem sapiente maxime animi mollitia iure, iste officia! Commodi, facere sint? Corporis officia quod debitis dolorem necessitatibus. Debitis, nisi.',
                 'link' => 'praesent-tristique-gravida-ligula',
                 'grant' => 'ERC',

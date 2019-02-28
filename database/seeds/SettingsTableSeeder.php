@@ -17,7 +17,7 @@ class SettingsTableSeeder extends Seeder
             [
                 'context' => 'all',
                 'key' => 'title',
-                'value' => 'Angelique Cramer'
+                'value' => 'Website Title'
             ],
             [
                 'context' => 'all',
@@ -32,7 +32,7 @@ class SettingsTableSeeder extends Seeder
             [
                 'context' => 'all',
                 'key' => 'username',
-                'value' => 'angecramer'
+                'value' => 'MihaiAC'
             ],
             [
                 'context' => 'all',

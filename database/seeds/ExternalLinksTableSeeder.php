@@ -21,11 +21,11 @@ class ExternalLinksTableSeeder extends Seeder
             ],
             [
                 'text' => 'Research Portal',
-                'anchor' => 'https://research.tilburguniversity.edu/en/persons/ang%C3%A9lique-cramer'
+                'anchor' => 'https://google.com'
             ],
             [
                 'text' => 'Another Link',
-                'anchor' => 'https://research.tilburguniversity.edu/en/persons/ang%C3%A9lique-cramer'
+                'anchor' => 'https://google.com'
             ]
         ]);
     }

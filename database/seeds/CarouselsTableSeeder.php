@@ -18,7 +18,7 @@ class CarouselsTableSeeder extends Seeder
         [
             [
                 'context' => 'home.index',
-                'title' => 'Carousel Title',
+                'title' => 'Lorem ipsum dolor sit',
                 'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cumque? Est totam, dolor inventore porro id hic mollitia suscipit neque similique praesentium quo dicta fuga perferendis optio culpa veritatis beatae. Iure impedit praesentium fuga quas, incidunt laboriosam maiores, distinctio quae dolore, blanditiis autem? Magni optio quo aspernatur, maiores molestiae autem!',
                 'image' => 'avatar.png',
                 'color' => '#1A2233'

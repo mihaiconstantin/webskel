@@ -18,11 +18,11 @@ class ContactInfosTableSeeder extends Seeder
           [
             'context' => 'home.index',
             'prefix' => 'dr.',
-            'name' => 'Angélique Cramer',
+            'name' => 'Firstname Lastname',
             'position' => 'Associate Professor',
             'company' => 'Tilburg University',
             'department' => 'Methodology and Statistics',
-            'email' => 'aoj.cramer@gmail.com'
+            'email' => 'email@example.com'
           ]  
         ]);
     }
