@@ -11,7 +11,7 @@
 				<div class="v d-flex flex-row justify-content-md-around flex-wrap">
 
 					<div v-for="project in items" :key="project.id" :class="conditionalRender(project.featured, 'col-md-6', 'col-xl-4')" class="o text-center">
-                        <div :data-aos="conditionalRender(project.featured, 'zoom-in-up', 'fade-up')" 
+                        <div :data-aos="conditionalRender(project.featured, 'zoom-in-up', 'fade-up')"
                              :class="conditionalRender(project.featured, 'featuredShadow', 'regularShadow')" 
                              class="card">
                             
@@ -98,26 +98,21 @@
         
         .card {
             border: 0;
-            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-            border-radius: .5rem;
+            border-radius: 0.5rem;
             margin-top: 1.5rem;
             background-color: $app-client-turquoise;
 
             &:hover {
                 @include material_shadow_md;
 
-                .card-title {
-                    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-                    color: $app-client-white;
-                }
-
-                .meta-highlight {
+                .card-title, .meta-highlight {
+                    transition: color 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
                     color: $app-client-white;
                 }
             }
 
             .project-meta {
-                margin-bottom: .5rem;
+                margin-bottom: 0.5rem;
             }
 
             .btn-project {
