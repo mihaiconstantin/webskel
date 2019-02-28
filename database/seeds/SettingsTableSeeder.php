@@ -21,6 +21,11 @@ class SettingsTableSeeder extends Seeder
             ],
             [
                 'context' => 'all',
+                'key' => 'copyright',
+                'value' => 'Firstname Lastname'
+            ],
+            [
+                'context' => 'all',
                 'key' => 'logo',
                 'value' => 'https://experiencesampling.nl/storage/settings/February2018/mjkie6fZZnjmaHCagCt9.png'
             ],
