@@ -12,7 +12,7 @@ import VueSmoothScroll from './plugins/VueSmoothScroll.js';
 
 
 // Register Vue plugins.
-Vue.use(VueAos, { duration: 500, offset: 300 });
+Vue.use(VueAos, { duration: 500, offset: 300, easing: 'ease-out-back' });
 Vue.use(VueParticles);
 Vue.use(VueSmoothScroll);
 
