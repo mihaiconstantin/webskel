@@ -7,7 +7,7 @@
 		<div class="p row">
 			<div class="bs app-footer-social text-center col-12">
 				<a :href="twitterShareLink" target="_blank">
-					<img :src="revealPath(twitterIcon, 'storage/img')" alt="Twitter Icon @angecramer" class="bk img-fluid">
+					<img :src="revealPath(twitterIcon, 'storage/img')" alt="Twitter Icon" class="bk img-fluid">
 				</a>			
 			</div>
 		</div>
@@ -15,7 +15,7 @@
 		<!-- copyright. -->
 		<div class="p row">
 			<div class="bs app-footer-copyright text-center col-12">
-				<p class="text-muted">Copyright &copy; {{ year }} <a :href="homeUrl">Angélique Cramer</a></p>
+				<p class="text-muted">Copyright &copy; {{ year }} <a :href="homeUrl">{{ copyright }}</a></p>
 			</div>
 		</div>
 
@@ -42,7 +42,8 @@
 
 		props: [
             'twitterIcon',
-            'homeUrl'
+            'homeUrl',
+            'copyright'
 		],
 
 		data() {
