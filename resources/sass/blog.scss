@@ -2,14 +2,15 @@
 
 
 #app {
-    overflow: hidden;
+    .container {
+        padding-top: 105px;
+    }
 
-    section {
-        margin-bottom: 1.5rem;
-
-        > .row {
-            padding: 1.5rem 0;
-        }
+    #app-blog {
+        @include material_shadow_md;
+        padding: 1.5rem;
+		margin: 0 0 2rem 0;
+        position: relative;
     }
 
     .app-section-title {
