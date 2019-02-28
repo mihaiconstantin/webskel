@@ -19,3 +19,8 @@ const mix = require('laravel-mix');
  // Entry for the index page of the blog controller.
 mix.js('resources/js/blog.js', 'public/js/blog_index.js')
    .sass('resources/sass/blog.scss', 'public/css/blog_index.css');
+
+
+ // Entry for the post page of the blog controller.
+ mix.js('resources/js/post.js', 'public/js/post_index.js')
+    .sass('resources/sass/post.scss', 'public/css/post_index.css');
