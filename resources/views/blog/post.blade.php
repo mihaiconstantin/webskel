@@ -27,7 +27,7 @@
             <app-navigation :links="{{ $links }}" active="{{ $activeLink }}"></app-navigation>
             
             <div class="b container">
-                <app-footer twitter-icon="{{ $twitter }}" home-url="{{ route('home.index') }}"></app-footer>
+                <app-footer twitter-icon="{{ $twitter }}" home-url="{{ route('home.index') }}" copyright="{{ $copyright }}"></app-footer>
             </div>
 
         </template>
