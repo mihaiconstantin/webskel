@@ -53,15 +53,8 @@ Vue.config.productionTip = false;
 const app = new Vue({
     el: '#app',
 
-    beforeCreate() {
-        console.log("before create")
-    },
-
-
     mounted() {
         this.$nextTick(() => {
-            console.log('mounted');
-
             this.$initVueAos();
             this.$initVueParticles('vue-particles');
             this.$initVueSmoothScroll('app-navigation');
