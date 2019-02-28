@@ -22,7 +22,7 @@ class LinkNavigationTableSeeder extends Seeder
             [ 'navigation_id' => 1, 'link_id' => 5 ],
             [ 'navigation_id' => 1, 'link_id' => 6 ],
             [ 'navigation_id' => 2, 'link_id' => 7 ],
-            [ 'navigation_id' => 2, 'link_id' => 8 ]
+            [ 'navigation_id' => 2, 'link_id' => 6 ]
         ]);
     }
 }

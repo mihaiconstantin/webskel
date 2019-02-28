@@ -41,7 +41,7 @@ class LinksTableSeeder extends Seeder
             ],
 			[
                 'text' => 'Home',
-                'anchor' => '/home'
+                'anchor' => '/'
             ]
         ]);
     }
