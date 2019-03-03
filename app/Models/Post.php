@@ -12,7 +12,7 @@ class Post extends Model
      */
     public function user()
     {
-        return $this->belongsTo('App\Models\User', 'author_id');
+        return $this->belongsTo('App\Models\User', 'author_id')->select(['id', 'name']);
     }
 
 
@@ -22,7 +22,7 @@ class Post extends Model
      */
     public function category()
     {
-        return $this->belongsTo('App\Models\Category');
+        return $this->belongsTo('App\Models\Category')->select(['id', 'name', 'slug']);
     }
     
 
