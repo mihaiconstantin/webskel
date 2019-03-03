@@ -52,7 +52,7 @@
 		        					in <span class="s post-category"><a href="#">{{ $post->category->name }}</a></span>
 				        		</div>
 
-                                <img src="{{ URL::asset('storage/posts/' . $post->image) }}" alt="{{ $post->seo_title }}" class="s post-featured-image img-fluid">
+                                <img src="{{ URL::asset('storage/' . $post->image) }}" alt="{{ $post->seo_title }}" class="s post-featured-image img-fluid">
                             </header>
 
 
