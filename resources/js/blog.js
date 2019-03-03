@@ -52,5 +52,12 @@ const app = new Vue({
         this.$nextTick(() => {
             this.$initVueAos();
         });
+    },
+
+
+    computed: {
+        ready() {
+            return !this.$store.getters.fetchingStatus;
+        }
     }
 });
