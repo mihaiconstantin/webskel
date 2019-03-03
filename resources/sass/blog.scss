@@ -1,0 +1,19 @@
+@import './bootstrap';
+
+
+#app {
+    .container {
+        padding-top: 105px;
+    }
+
+    #app-blog {
+        @include material_shadow_md;
+        padding: 1.5rem;
+		margin: 0 0 2rem 0;
+        position: relative;
+    }
+
+    .app-section-title {
+        color: $app-black;
+    }
+}

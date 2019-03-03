@@ -11,5 +11,16 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+ // Entry for the index page of the home controller (i.e., the landing page).
+ mix.js('resources/js/home.js', 'public/js/home_index.js')
+ .sass('resources/sass/home.scss', 'public/css/home_index.css');
+ 
+
+ // Entry for the index page of the blog controller.
+mix.js('resources/js/blog.js', 'public/js/blog_index.js')
+   .sass('resources/sass/blog.scss', 'public/css/blog_index.css');
+
+
+ // Entry for the post page of the blog controller.
+ mix.js('resources/js/post.js', 'public/js/blog_post.js')
+    .sass('resources/sass/post.scss', 'public/css/blog_post.css');
