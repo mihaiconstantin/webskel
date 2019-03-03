@@ -45,11 +45,11 @@
                                     @endif
                                 </h1>
 
-                                <p class="p post-author small text-muted">By <span><a href="#">{{ $post->user->name }}</a></span></p>
+                                <p class="p post-author small text-muted">By <span><a href="{{ route('blog.author', ['id' => $post->user->id]) }}">{{ $post->user->name }}</a></span></p>
 
                                 <div class="p post-details small text-muted">
         							<time class="s post-pubdate" datetime="{{ $post->created_at['timestamp'] }}" pubdate>{{ $post->created_at['formatted'] }}</time>
-		        					in <span class="s post-category"><a href="#">{{ $post->category->name }}</a></span>
+		        					in <span class="s post-category"><a href="{{ route('blog.category', ['slug' => $post->category->slug]) }}">{{ $post->category->name }}</a></span>
 				        		</div>
 
                                 <img src="{{ URL::asset('storage/' . $post->image) }}" alt="{{ $post->seo_title }}" class="s post-featured-image img-fluid">
