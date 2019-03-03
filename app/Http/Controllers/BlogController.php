@@ -24,7 +24,7 @@ class BlogController extends Controller
     // Post page of the blog.
     public function post($slug) 
     {
-        $post = Post::where('slug', '=', '$slug')->firstOrFail();
+        $post = Post::where('slug', '=', $slug)->firstOrFail();
         $post->next = Post::pickNext($post->category->id, $post->slug);
 
         $data = array(
