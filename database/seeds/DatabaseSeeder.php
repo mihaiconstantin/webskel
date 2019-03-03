@@ -27,6 +27,9 @@ class DatabaseSeeder extends Seeder
         $this->call(ContactInfosTableSeeder::class);
         $this->call(ExternalLinksTableSeeder::class);
         $this->call(ContactInfoExternalLinkTableSeeder::class);
+
+        $this->call(VoyagerDatabaseSeeder::class);
+        $this->call(VoyagerDummyDatabaseSeeder::class);
         
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
