@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class SettingsTableSeeder extends Seeder
+class ConfigsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,9 +11,9 @@ class SettingsTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('settings')->delete();
+        DB::table('configs')->delete();
 
-        DB::table('settings')->insert([
+        DB::table('configs')->insert([
             [
                 'context' => 'all',
                 'key' => 'title',

@@ -27,8 +27,8 @@ class HomeController extends Controller
             'contact'       => ContactInfo::activeFor('home.index')
         );
         
-        $settings = $this->prepareSettings('home.index');        
+        $configs = $this->prepareConfigs('home.index');        
         
-        return view('home.index', $data, $settings);
+        return view('home.index', $data, $configs);
     }
 }

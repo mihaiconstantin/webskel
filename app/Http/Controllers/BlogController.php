@@ -15,9 +15,9 @@ class BlogController extends Controller
             'links' => Navigation::linksForContext('blog.index'),
         );
         
-        $settings = $this->prepareSettings('blog.index');        
+        $configs = $this->prepareConfigs('blog.index');        
         
-        return view('blog.index', $data, $settings);
+        return view('blog.index', $data, $configs);
     }
 
 
@@ -32,9 +32,9 @@ class BlogController extends Controller
             'post' => $post
         );
         
-        $settings = $this->prepareSettings('blog.index');        
+        $configs = $this->prepareConfigs('blog.index');        
 
-        return view('blog.post', $data, $settings);
+        return view('blog.post', $data, $configs);
     }
 }
 
