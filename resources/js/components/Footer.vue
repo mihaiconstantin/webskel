@@ -22,7 +22,7 @@
 		<!-- Developer -->
 		<div class="p row">
 			<div class="bs app-page-footer-author text-center col-12">
-				<p class="text-muted ">Website designed and created by <a href="https://constantinmihai.com" target="_blank">Mihai A. Constantin</a> (i.e., except the color scheme).</p>
+				<p class="text-muted ">Website designed and created by <a href="https://constantinmihai.com" target="_blank">Mihai A. Constantin</a> (i.e., excluding the color scheme).</p>
 			</div>
 		</div>
 
