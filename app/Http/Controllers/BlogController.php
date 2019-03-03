@@ -36,5 +36,32 @@ class BlogController extends Controller
 
         return view('blog.post', $data, $configs);
     }
+
+
+    // Show the posts associated with a give user id.
+    public function author($id)
+    {
+        $data = array(
+            'links' => Navigation::linksForContext('blog.index'),
+        );
+        
+        $configs = $this->prepareConfigs('blog.index');        
+        
+        return view('blog.index', $data, $configs);
+    }
+
+
+    
+    // Show the posts within a given category, identified by slug.
+    public function category($slug)
+    {
+        $data = array(
+            'links' => Navigation::linksForContext('blog.index'),
+        );
+        
+        $configs = $this->prepareConfigs('blog.index');        
+        
+        return view('blog.index', $data, $configs);
+    }
 }
 

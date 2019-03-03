@@ -23,5 +23,5 @@ Route::get('/', 'HomeController@index')->name('home.index');
  */
 Route::get('blog/',                 'BlogController@index')     ->name('blog.index');
 Route::get('blog/post/{slug}',      'BlogController@post')      ->name('blog.post');
-// Route::get('blog/author/{id}',      'BlogController@author')    ->name('blog.author');
-// Route::get('blog/category/{slug}',  'BlogController@category')  ->name('blog.category');
+Route::get('blog/author/{id}',      'BlogController@author')    ->name('blog.author');
+Route::get('blog/category/{slug}',  'BlogController@category')  ->name('blog.category');
