@@ -12,7 +12,7 @@ class Post extends Model
      */
     public function user()
     {
-        return $this->belongsTo('App\Models\User');
+        return $this->belongsTo('App\Models\User', 'author_id');
     }
 
 
@@ -40,7 +40,7 @@ class Post extends Model
      */
     public static $defaultColumns = [
         'id', 
-        'user_id', 
+        'author_id', 
         'category_id',
         'title', 
         'slug',
@@ -118,7 +118,7 @@ class Post extends Model
             ->select($columns ?? self::$defaultColumns)
             ->withStatus($status)
             ->when($categoryId, function ($query) use ($categoryId) { return $query->where('category_id', $categoryId); })
-            ->when($userId, function ($query) use ($userId) { return $query->where('user_id', $userId); })
+            ->when($userId, function ($query) use ($userId) { return $query->where('author_id', $userId); })
             ->orderBy('created_at', $order)
             ->take($howMany)
             ->with(['User', 'Category']);
