@@ -63,10 +63,10 @@ class Post extends Model
      */
     public function getCreatedAtAttribute($value)
     {
-      	return array(
-      		'timestamp' => $value,
-      		'formatted' => Carbon::createFromTimeStamp(strtotime($value))->diffForHumans()
-      	);
+          return array(
+              'timestamp' => $value,
+              'formatted' => Carbon::createFromTimeStamp(strtotime($value))->diffForHumans()
+          );
     }
 
     #endregion
@@ -129,19 +129,20 @@ class Post extends Model
 
     #region Specialized retrievers.
 
-   	/**
-   	 * Fetch the next post (i.e., by creation date) from a specified
-   	 * category, and excluding a specifed slug.
-   	 *
-   	 * @param  int  $categoryId The id of the category to select the next post from.
-   	 * @param  string  $slug The slug of the post to be excluded.
+       /**
+        * Fetch the next post (i.e., by creation date) from a specified
+        * category, and excluding a specifed slug.
+        *
+        * @param  int  $categoryId The id of the category to select the next post from.
+        * @param  string  $slug The slug of the post to be excluded.
      * @return mixed 
-   	 */
+        */
     public static function pickNext(int $categoryId, string $slug) 
     {
-       return static::where([
-           ['category_id', $categoryId],
-           ['slug', '<>', $slug]])
+       return static::select(['title', 'slug'])
+           ->where([
+               ['category_id', $categoryId], 
+               ['slug', '<>', $slug]])
            ->withStatus('published')
            ->inRandomOrder()
            ->first();
