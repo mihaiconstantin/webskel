@@ -36,7 +36,7 @@
 	export default {
         data() {
             return {
-                placeholderFilter: "Posts will filter as you type...",
+                placeholderFilter: "Looking for something?",
             }
         },
 

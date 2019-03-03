@@ -1,7 +1,7 @@
 <template>
 	<footer id="app-footer" class="r col-12">
 
-        <hr class="col-md-2 mx-auto">
+        <hr class="col-md-8 mx-auto">
 
 		<!-- social link. -->
 		<div class="p row">
