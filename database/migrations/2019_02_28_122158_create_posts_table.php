@@ -27,7 +27,7 @@ class CreatePostsTable extends Migration
             $table->text('body');
             $table->string('image');
 
-            $table->string('meta_title');
+            $table->string('seo_title');
             $table->string('meta_description');
             $table->string('meta_keywords');
             
