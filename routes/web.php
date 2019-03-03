@@ -25,3 +25,12 @@ Route::get('blog/',                 'BlogController@index')     ->name('blog.ind
 Route::get('blog/post/{slug}',      'BlogController@post')      ->name('blog.post');
 Route::get('blog/author/{id}',      'BlogController@author')    ->name('blog.author');
 Route::get('blog/category/{slug}',  'BlogController@category')  ->name('blog.category');
+
+
+
+/*
+ * Voyager routes.
+ */
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
