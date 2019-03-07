@@ -16,15 +16,9 @@
 
 <script>
     import { mapGetters } from 'vuex';
-    import { imageMixin } from "../mixins/imageMixin.js";
     import Post from './Post.vue';
 
     export default {
-        mixins: [
-            imageMixin			
-        ],
-
-
         components: {
             'app-post': Post
         },

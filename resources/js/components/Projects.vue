@@ -51,13 +51,11 @@
 
 
 <script>
-    import { imageMixin } from "../mixins/imageMixin.js";
     import { textMixin } from "../mixins/textMixin.js";
     
     
 	export default {
 		mixins: [
-            imageMixin,
             textMixin
         ],
         
