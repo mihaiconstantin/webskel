@@ -52,7 +52,9 @@
 		        					in <span class="s post-category"><a href="{{ route('blog.category', ['slug' => $post->category->slug]) }}">{{ $post->category->name }}</a></span>
 				        		</div>
 
-                                <img src="{{ URL::asset('storage/' . $post->image) }}" alt="{{ $post->seo_title }}" class="s post-featured-image img-fluid">
+                                @if ($post->image_display) 
+                                    <img src="{{ URL::asset('storage/' . $post->image) }}" alt="{{ $post->seo_title }}" class="s post-featured-image img-fluid">
+                                @endif
                             </header>
 
 
