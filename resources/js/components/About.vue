@@ -17,7 +17,7 @@
                                                                 ), 'justify-content-center')" 
 
                                                             :style="itExistsAndIsApproved(about.image, about.image_display) ? { 
-                                                                                                                                backgroundImage: revealUrlPath(about.image, 'storage/img'),  
+                                                                                                                                backgroundImage: revealUrlPath(about.image, '/storage'),  
                                                                                                                                 backgroundPosition: about.image_position == 'left' ? '5% 50%': '95% 50%'
                                                                                                                               } : {}" 
 

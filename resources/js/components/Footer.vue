@@ -7,7 +7,7 @@
 		<div class="p row">
 			<div class="bs app-footer-social text-center col-12">
 				<a :href="twitterShareLink" target="_blank">
-					<img :src="revealPath(twitterIcon, '/storage/img')" alt="Twitter Icon" class="bk img-fluid">
+					<img :src="revealPath(twitterIcon, '/storage')" alt="Twitter Icon" class="bk img-fluid">
 				</a>			
 			</div>
 		</div>
