@@ -19,7 +19,7 @@
                 </p>
                 
                 <!-- Post image. -->
-                <img v-if="itExists(post.image)" :src="revealPath(post.image, '/storage')" :alt="post.meta_title" class="o post-image card-img-top">
+                <img v-if="isApproved(post.image_display)" :src="revealPath(post.image, '/storage')" :alt="post.meta_title" class="o post-image card-img-top">
                 
                 <!-- Post excerpt. -->
                 <p class="t post-excerpt card-text">{{ post.excerpt }}</p>
