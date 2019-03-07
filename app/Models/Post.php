@@ -47,7 +47,8 @@ class Post extends Model
         'excerpt', 
         'image', 
         'featured', 
-        'created_at'
+        'created_at',
+        'image_display' 
     ];
 
 
