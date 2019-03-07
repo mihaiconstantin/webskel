@@ -32,7 +32,7 @@ class ConfigsTableSeeder extends Seeder
             [
                 'context' => 'all',
                 'key' => 'twitter',
-                'value' => 'twitter.png'
+                'value' => 'img/twitter.png'
             ],
             [
                 'context' => 'all',
