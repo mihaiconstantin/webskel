@@ -35,10 +35,10 @@ Follow the steps below to install and use `Web.Skel` on your local machine:
 3. run `cp .env.example .env` to create the `.env` configuration file
 4. open the `.env` file in your favorite editor and modify the following variables accordingly:
     - `APP_URL`=http://localhost:8000
-	- `DB_DATABASE=`<small>your_database_name</small>
-	- `DB_USERNAME=`<small>your_database_user</small>
-	- `DB_PASSWORD=`<small>your_database_password</small>
-	- *for more details regarding `.env` variables see [this resource](https://laravel.com/docs/5.5/configuration#environment-configuration)*
+    - `DB_DATABASE=`<small>your_database_name</small>
+    - `DB_USERNAME=`<small>your_database_user</small>
+    - `DB_PASSWORD=`<small>your_database_password</small>
+    - *for more details regarding `.env` variables see [this resource](https://laravel.com/docs/5.5/configuration#environment-configuration)*
 5. then, run `php artisan key:generate` to generate an application-specific secret key that will be automatically added to the `APP_KEY` variable in `.env` file
 6. run `php artisan migrate --seed` to build the database and seed it with the default data
 7. run `php artisan storage:link` to link the `storage` folder in order for the assets to be correctly loaded
@@ -52,7 +52,7 @@ If you are interested in using `Web.Skel` with the admin panel included, follow 
 
 1. run `git clone https://github.com/mihaiconstantin/webskel`
 2. `cd` into the `webskel`
-3. run `git checkout -b admin` to switch to the admin panel branch
+3. run `git checkout admin` to switch to the admin panel branch
 4. follow steps **3** to **10** from previous section
 
 Now, you can access the admin panel by browsing http://localhost:8000/admin and using the following credentials:
@@ -70,7 +70,7 @@ To get started with tweaking `Web.Skel`:
 
 1. run `git clone https://github.com/mihaiconstantin/webskel`
 2. `cd` into the `webskel`
-3. run `git checkout -b dev` to switch to the development branch
+3. run `git checkout dev` to switch to the development branch
 
 At this point, you can edit the project files however you see fit.
 
@@ -93,6 +93,7 @@ If you are interested in this project, please consider submitting a pull request
    - related to smooth scrolling: page *jumps* when clicking on a menu link that is already scrolled into viewport
    - related to blog cards: change from column-wise card order to row-wise
 3. Improvements:
+   - add proper `og` tags to all pages
    - add browsers checks and middleware to detect IE version and insert polyfill scripts (*low priority*)
 
 ## License
