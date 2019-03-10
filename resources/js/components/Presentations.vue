@@ -83,36 +83,31 @@
 
         .app-more-content {
             margin-top: 1.5rem;
+        }
 
-            .btn-more {
-                @include app_button($app-client-white, #f1ebe4, $app-client-blue);
-            }
+        .btn-project, .btn-more {
+            @include app_button($app-white, $app-accent, $app-emphasis, $app-emphasis);
         }
     }
     
     #presentation-list {
         color: $app-white;
-        // background-color: $app-client-turquoise;
-        background-color: #00819a;
+        background-color: $app-secondary;
         padding-top: 0;
         
         .card {
             border: 0;
             border-radius: .5rem;
             margin-top: 1.5rem;
-            // background-color: $app-client-turquoise;
-            background-color: #00819a;
+            background-color: $app-secondary;
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
             &:hover {
                 @include material_shadow_md;
 
                 .card-title {
-                    color: $app-client-white;
-                }
-
-                .meta-highlight {
-                    color: $app-client-white;
+                    transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                    color: $app-accent;
                 }
             }
 
@@ -122,10 +117,6 @@
 
             .presentation-meta {
                 margin-bottom: .5rem;
-            }
-
-            .btn-project {
-                @include app_button($app-client-white, #f1ebe4, $app-client-blue);
             }
         }
     }
