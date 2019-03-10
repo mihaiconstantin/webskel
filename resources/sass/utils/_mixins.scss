@@ -25,11 +25,12 @@
 }
 
 
-@mixin app_button($bgColor, $hoverBgColor, $textColor) {
+@mixin app_button($bgColor, $hoverBgColor, $textColor, $hoverTextColor) {
     background-color: $bgColor;
     color: $textColor;
     
     &:hover {
         background-color: $hoverBgColor;
+        color: $hoverTextColor;
     }
 }
