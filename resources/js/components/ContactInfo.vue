@@ -33,16 +33,18 @@
 
 
 <script>
-export default {
-    props: {
-        item: Object
+    export default {
+        props: {
+            item: Object
+        }
     }
-}
 </script>
 
 
 
 <style lang="scss" scoped>
+    @import "../../sass/utils/variables";
+
 
     #app-contact-info {
         .info-name h4 {
@@ -53,10 +55,10 @@ export default {
             a {
                 display: block;
                 text-decoration: none;
-                color: #6c757d;
+                color: $bootstrap-muted;
 
                 &:hover {
-                    color: #007bff;
+                    color: $bootstrap-link;
                 }
             }
 
@@ -70,10 +72,9 @@ export default {
                 content: '';
                 display: block;
                 height: 1px;
-                border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+                border-bottom: 1px solid rgba($app-black-dark, .1);
                 margin: 1rem auto;
             }
         }
     }
-
 </style>
