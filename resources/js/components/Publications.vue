@@ -102,7 +102,7 @@
         }
 
         .btn-publication, .btn-more {
-                @include app_button($app-secondary, $app-accent, $app-white, $app-emphasis);
+            @include app_button($app-secondary, $app-accent, $app-white, $app-emphasis);
         }
     }
     

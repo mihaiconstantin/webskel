@@ -3,7 +3,7 @@
         <div id="app-post" class="g card">
             <div class="y card-body">
                 <!-- Featured star. -->
-                <span v-if="post.featured == 1" class="s post-featured-star">&#9733;</span>
+                <span v-if="post.featured == 1" class="s app-card-star app-start-right">&#9733;</span>
 
                 <!-- Post title. -->
                 <h5 class="s post-title card-title text-center">{{ post.title }}</h5>
@@ -97,21 +97,16 @@
 
 		&:hover {
             @include card_shadow_md;
-            
-			.post-featured-star {
-				color: $app-client-yellow;
-			}
+                        
+            .app-card-star {
+                transition: transform 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+                transform: rotate(360deg);
+            }
 		}
 
-		.post-featured-star {
-			font-size: 1rem;
-			color: $app-client-blue;
-			position: absolute;
-			text-align: center;
-			right: 5px;
-			top: 0px;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-		}
+        .app-card-star {
+            color: $app-primary;
+        }
 
 		.post-title,
 		.post-details,
@@ -122,13 +117,13 @@
 
 		.post-details {
 			a {
-				color: $app-client-blue;
+				color: $app-emphasis;
 			}
 		}
 
 		.post-footer {
 			.btn-read {
-                @include app_button;
+                @include app_button($app-primary, $app-accent, $app-white, $app-emphasis);
 			}
 		}
 	}
