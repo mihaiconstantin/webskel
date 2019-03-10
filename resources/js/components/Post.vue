@@ -123,7 +123,7 @@
 
 		.post-footer {
 			.btn-read {
-                @include app_button($app-primary, $app-accent, $app-white, $app-emphasis);
+                @include app_button($app-primary, $app-primary-light, $app-white, $app-white);
 			}
 		}
 	}
