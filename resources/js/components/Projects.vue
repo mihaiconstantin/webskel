@@ -1,5 +1,5 @@
 <template>
-	<section id="app-projects" class="r">
+	<section id="app-projects" class="r" data-aos="fade">
 
 		<div class="p col-12 text-left app-section-title" data-aos="fade-left">
 			<h1 class="display-3">Projects</h1>

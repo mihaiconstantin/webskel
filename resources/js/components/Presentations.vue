@@ -1,5 +1,5 @@
 <template>
-	<section id="app-presentations" class="r">
+	<section id="app-presentations" class="r" data-aos="fade">
 
 		<div class="p col-12 text-left app-section-title" data-aos="fade-left">
 			<h1 class="display-3">Presentations</h1>
@@ -92,14 +92,16 @@
     
     #presentation-list {
         color: $app-white;
-        background-color: $app-client-turquoise;
+        // background-color: $app-client-turquoise;
+        background-color: #00819a;
         padding-top: 0;
         
         .card {
             border: 0;
             border-radius: .5rem;
             margin-top: 1.5rem;
-            background-color: $app-client-turquoise;
+            // background-color: $app-client-turquoise;
+            background-color: #00819a;
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
             &:hover {
