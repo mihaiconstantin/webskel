@@ -92,11 +92,12 @@ If you are interested in this project, please consider submitting a pull request
 2. Fixes:
    - related to smooth scrolling: page *jumps* when clicking on a menu link that is already scrolled into viewport
    - related to blog cards: change from column-wise card order to row-wise
-   - fix transition color on hover for projects and presentations
+   - ~~fix transition color on hover for projects and presentations~~
 3. Improvements:
    - add proper `og` tags to all pages
    - add browsers checks and middleware to detect IE version and insert polyfill scripts (*low priority*)
-   - set text line height to 1.9 for blog posts
+   - ~~set text line height to 1.9 for blog posts~~
+   - ~~update the color scheme for higher color consistency~~
    - add an animated arrow to indicate scrolling on the carousel section
 
 ## License
