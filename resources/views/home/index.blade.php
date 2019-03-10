@@ -46,7 +46,7 @@
                     </template>
                 </app-contact>
                 
-                <app-footer twitter-icon="{{ $twitter }}" home-url="#app-carousel" copyright="{{ $copyright }}"></app-footer>
+                <app-footer social-icon="{{ $socialIcon }}" social-link="{{ $socialLink }}" home-url="#app-carousel" copyright="{{ $copyright }}"></app-footer>
             
             </div>
 

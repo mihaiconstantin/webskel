@@ -38,7 +38,7 @@
 
                     <app-post-list></app-post-list>
 
-                    <app-footer v-if="ready" twitter-icon="{{ $twitter }}" home-url="{{ route('home.index') }}" copyright="{{ $copyright }}"></app-footer>
+                    <app-footer  v-if="ready" social-icon="{{ $socialIcon }}" social-link="{{ $socialLink }}" home-url="{{ route('home.index') }}" copyright="{{ $copyright }}"></app-footer>
 
                 </main>
             </div>

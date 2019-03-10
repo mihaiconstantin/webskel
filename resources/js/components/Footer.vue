@@ -6,8 +6,8 @@
 		<!-- social link. -->
 		<div class="p row">
 			<div class="bs app-footer-social text-center col-12">
-				<a :href="twitterShareLink" target="_blank">
-					<img :src="revealPath(twitterIcon, '/storage')" alt="Twitter Icon" class="bk img-fluid">
+				<a :href="socialShareLink" target="_blank">
+					<img :src="revealPath(socialIcon, '/storage')" alt="Social Icon" class="bk img-fluid">
 				</a>			
 			</div>
 		</div>
@@ -41,7 +41,8 @@
         ],
 
 		props: [
-            'twitterIcon',
+            'socialIcon',
+            'socialLink',
             'homeUrl',
             'copyright'
 		],
@@ -53,8 +54,8 @@
 		},
 
 		computed: {
-			twitterShareLink() {
-				return `https://twitter.com/intent/tweet?text=Check%20out&via=angecramer&url=${window.location.href}`;			
+			socialShareLink() {
+				return `${ this.socialLink }&url=${ window.location.href }`;			
 			}
 		}
 	}
@@ -114,17 +115,3 @@
 		}
 	}
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
