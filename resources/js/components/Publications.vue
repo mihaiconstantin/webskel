@@ -45,7 +45,7 @@
             </div>
 
             <div class="p col-12 text-center app-more-content">
-                <a :href="linkMore == 'undefined' ? '#' : linkMore" class="btn btn-more" role="button" target="_self">Publication list &raquo;</a>                
+                <a :href="linkMore == 'undefined' ? '#' : linkMore" class="btn btn-more" role="button" target="_self">See all publications &raquo;</a>                
             </div>
         </div>
 
