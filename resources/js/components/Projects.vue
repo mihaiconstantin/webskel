@@ -87,7 +87,7 @@
         }
 
         .btn-more, .btn-project {
-            @include app_button($app-white, $app-accent, $app-emphasis);
+            @include app_button($app-white, $app-accent, $app-emphasis, $app-emphasis);
         }
     }
     
