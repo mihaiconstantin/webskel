@@ -2,11 +2,14 @@
 
 
 @section('meta_seo')
-    <meta name="description" content="{{ $meta_description }}">
-    <meta name="keywords" content="{{ $meta_keywords }}">
+    <meta name="description" content="{{ $post->meta_description }}">
+    <meta name="keywords" content="{{ $post->meta_keywords }}">
     
-    <meta property="og:description" name="description" content="{{ $og_description }}">
-    <meta property="og:image:url" content="{{ $og_image }}">
+    <meta property="og:url" content="{{ Request::url() }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ $title }}">
+    <meta property="og:description" content="{{ $og_description }}">
+    <meta property="og:image" content="{{ $og_image }}">
 @endsection
 
 
