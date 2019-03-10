@@ -85,7 +85,7 @@
 
 				&:hover {
 					filter: grayscale(0%);
-					transform:rotate(360deg);
+					transform: rotate(360deg);
 				}
 			}
 		}
@@ -100,7 +100,7 @@
 			}
 
 			a {
-				color: $app-black;
+				color: $app-emphasis;
 				text-decoration: none;
 			}
 		}
