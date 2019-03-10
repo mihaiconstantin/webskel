@@ -1,6 +1,1 @@
 // Functions.
-
-@function alpha-color($color, $alpha) {
-    // @return rgba(red($color), green($color), blue($color), $alpha);
-    @return rgba($color, $alpha);
-}
