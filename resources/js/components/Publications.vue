@@ -118,6 +118,11 @@
             
             &:hover {
                 @include material_shadow_md;
+                
+                .card-title {
+                    transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                    color: $app-secondary-dark;
+                }
 
                 .app-card-star {
                     transition: transform 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
