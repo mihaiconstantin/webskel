@@ -96,7 +96,7 @@ If you are interested in this project, please consider submitting a pull request
     - related to blog cards: change from column-wise card order to row-wise
     - ~~fix transition color on hover for projects and presentations~~
 3. Improvements:
-    - add proper `og` tags to all pages
+    - ~~add proper `og` tags to all pages~~
     - ~~set text line height to 1.9 for blog posts~~
     - ~~update the color scheme for higher color consistency~~
 
