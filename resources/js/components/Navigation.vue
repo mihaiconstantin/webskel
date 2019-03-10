@@ -164,7 +164,7 @@
 
     .bg-app-navbar {
         @include material_shadow_md;
-        background-color: alpha-color($app-white, .95);
+        background-color: rgba($app-white, .95);
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 
