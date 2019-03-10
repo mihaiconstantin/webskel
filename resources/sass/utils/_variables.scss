@@ -1,13 +1,11 @@
 
-// Body
-$body-bg: #f8fafc;
-
 // Typography
 $font-family-sans-serif: "Nunito", sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
-// Colors
+
+// Standard colors
 $blue: #3490dc;
 $indigo: #6574cd;
 $purple: #9561e2;
@@ -19,20 +17,43 @@ $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
+
 // App colors
-$app-white: #FFFFFF;
-$app-black: #000000;
-$app-darkblue: #1A2233;
-$app-lightblue: #C5CAE9;
-$app-orange: #FFC107;
+$app-primary: #4682B4;
+$app-primary-light: #7ab1e6;
+$app-primary-dark: #005684;
 
-// Specific for elements
-$app-bg-primary: #1A2233;
-$app-bg-secondary: #FAFAFA;
-$app-bg-navbar: rgba(248, 250, 252, .95);
+$app-secondary: #00819a;
+$app-secondary-light: #51b1cb;
+$app-secondary-dark: #00546c;
 
-$app-client-blue: #1A2233;
-$app-client-turquoise: #5E8C8B;
-$app-client-pink: #CB998B;
-$app-client-white: #FEEAD4;
-$app-client-yellow: #E9B100;
+$app-accent: #ffd54f;
+$app-accent-light: #ffff81;
+$app-accent-dark: #c8a415;
+
+$app-emphasis: #1A2233;
+$app-emphasis-light: #42495d;
+$app-emphasis-dark: #00000c;
+
+
+// App palette
+$app-palette-1: #4144C1;
+$app-palette-2: #456BCB;
+$app-palette-3: #4682B4;
+$app-palette-4: #45B1CB;
+$app-palette-5: #41C1B7;
+
+
+// App standard colors
+$app-white: #f8fafc;
+$app-white-light: #ffffff;
+$app-white-dark: #c5c7c9;
+
+$app-black: #2c2c2c;
+$app-black-light: #555555;
+$app-black-dark: #000000;
+
+
+// Bootstrap colors
+$bootstrap-muted: #6c757d;
+$bootstrap-link: #007bff;

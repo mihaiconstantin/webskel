@@ -31,8 +31,13 @@ class ConfigsTableSeeder extends Seeder
             ],
             [
                 'context' => 'all',
-                'key' => 'twitter',
+                'key' => 'socialIcon',
                 'value' => 'img/twitter.png'
+            ],
+            [
+                'context' => 'all',
+                'key' => 'socialLink',
+                'value' => 'https://twitter.com/intent/tweet?text=Check%20out&via=mihaiac'
             ],
             [
                 'context' => 'all',

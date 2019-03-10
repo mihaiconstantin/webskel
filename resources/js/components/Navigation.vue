@@ -158,12 +158,13 @@
 
 <style lang="scss" scoped>
     @import "../../sass/utils/variables";
+    @import "../../sass/utils/functions";
     @import "../../sass/utils/mixins";
     
 
     .bg-app-navbar {
         @include material_shadow_md;
-        background-color: $app-bg-navbar;
+        background-color: rgba($app-white, .95);
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 
@@ -177,7 +178,7 @@
         font-weight: 500;
         
         a {
-            color: $app-client-blue !important;
+            color: $app-emphasis !important;
         } 
     }
 
@@ -194,7 +195,7 @@
                     left: 0; 
                     right: 100%; 
                     bottom: 10%;
-                    background-color: $app-client-turquoise;
+                    background-color: $app-emphasis-light;
                     transition: right 0.3s ease;
                     z-index: -1;
                 }
@@ -208,4 +209,3 @@
         }
     }
 </style>
-

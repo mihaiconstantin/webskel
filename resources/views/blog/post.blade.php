@@ -83,7 +83,7 @@
 
 
 
-                            <app-footer twitter-icon="{{ $twitter }}" home-url="{{ route('home.index') }}" copyright="{{ $copyright }}"></app-footer>
+                            <app-footer social-icon="{{ $socialIcon }}" social-link="{{ $socialLink }}" home-url="{{ route('home.index') }}" copyright="{{ $copyright }}"></app-footer>
 
                         </div>
 

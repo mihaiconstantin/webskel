@@ -1,33 +1,36 @@
-@import "../utils/variables";
-
+// Mixins.
 
 @mixin material_shadow_sm {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
+
 @mixin material_shadow_md {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
 
 @mixin blue_shadow {
     bow-shadow: 1px 1px 20px rgba(75, 156, 228, 0.88);
 }
 
+
 @mixin card_shadow_sm {
     box-shadow: 0 1px 0px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
 }
+
 
 @mixin card_shadow_md {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
 }
 
-@mixin app_button($bgColor: $app-client-turquoise, 
-                  $hoverBgColor: $app-client-pink,
-                  $textColor: $app-white) {
+
+@mixin app_button($bgColor, $hoverBgColor, $textColor, $hoverTextColor) {
     background-color: $bgColor;
     color: $textColor;
     
     &:hover {
         background-color: $hoverBgColor;
+        color: $hoverTextColor;
     }
 }

@@ -1,11 +1,11 @@
 <template>
-    <section id="app-publications" class="r">
+    <section id="app-publications" class="r" data-aos="fade">
 
         <div class="p col-12 text-left app-section-title" data-aos="fade-left">
             <h1 class="display-3">Publications</h1>
         </div>
 
-		<!-- Publications. -->
+        <!-- Publications. -->
         <div id="publication-list" class="p row justify-content-center">
             <div class="s col-11">
                 <div class="v d-flex flex-row justify-content-md-around flex-wrap">
@@ -45,7 +45,7 @@
             </div>
 
             <div class="p col-12 text-center app-more-content">
-                <a :href="linkMore == 'undefined' ? '#' : linkMore" class="btn btn-more" role="button" target="_self">Publication list &raquo;</a>                
+                <a :href="linkMore == 'undefined' ? '#' : linkMore" class="btn btn-more" role="button" target="_self">See all publications &raquo;</a>                
             </div>
         </div>
 
@@ -99,15 +99,15 @@
 
         .app-more-content {
             margin-top: 1.5rem;
+        }
 
-            .btn-more {
-                @include app_button ($app-client-turquoise, $app-client-pink);
-            }            
+        .btn-publication, .btn-more {
+            @include app_button($app-secondary, $app-accent, $app-white, $app-emphasis);
         }
     }
     
     #publication-list {
-        background-color: $app-white;
+        background-color: $app-white-light;
         padding-top: 0;
 
         .card {
@@ -117,15 +117,25 @@
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
             
             &:hover {
-                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+                @include material_shadow_md;
+                
+                .card-title {
+                    transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                    color: $app-secondary-dark;
+                }
+
+                .app-card-star {
+                    transition: transform 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+                    transform: rotate(360deg);
+                }
+            }
+
+            .app-card-star {
+                color: $app-secondary;
             }
 
             .publication-meta {
-            margin-bottom: .5rem;
-            }
-
-            .btn-publication {
-                @include app_button;
+                margin-bottom: .5rem;
             }
         }
     }
@@ -136,9 +146,5 @@
 
     .regularShadow {
         @include material_shadow_sm;
-    }
-
-    .app-card-star {
-        color: $app-client-yellow;
     }
 </style>

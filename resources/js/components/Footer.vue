@@ -6,8 +6,8 @@
 		<!-- social link. -->
 		<div class="p row">
 			<div class="bs app-footer-social text-center col-12">
-				<a :href="twitterShareLink" target="_blank">
-					<img :src="revealPath(twitterIcon, '/storage')" alt="Twitter Icon" class="bk img-fluid">
+				<a :href="socialShareLink" target="_blank">
+					<img :src="revealPath(socialIcon, '/storage')" alt="Social Icon" class="bk img-fluid">
 				</a>			
 			</div>
 		</div>
@@ -22,7 +22,7 @@
 		<!-- Developer -->
 		<div class="p row">
 			<div class="bs app-page-footer-author text-center col-12">
-				<p class="text-muted ">Website designed and created by <a href="https://constantinmihai.com" target="_blank">Mihai A. Constantin</a> (i.e., excluding the color scheme).</p>
+				<p class="text-muted ">Website designed and created by <a href="https://constantinmihai.com" target="_blank">Mihai A. Constantin</a>.</p>
 			</div>
 		</div>
 
@@ -41,7 +41,8 @@
         ],
 
 		props: [
-            'twitterIcon',
+            'socialIcon',
+            'socialLink',
             'homeUrl',
             'copyright'
 		],
@@ -53,8 +54,8 @@
 		},
 
 		computed: {
-			twitterShareLink() {
-				return `https://twitter.com/intent/tweet?text=Check%20out&via=angecramer&url=${window.location.href}`;			
+			socialShareLink() {
+				return `${ this.socialLink }&url=${ window.location.href }`;			
 			}
 		}
 	}
@@ -85,7 +86,7 @@
 
 				&:hover {
 					filter: grayscale(0%);
-					transform:rotate(360deg);
+					transform: rotate(360deg);
 				}
 			}
 		}
@@ -100,7 +101,7 @@
 			}
 
 			a {
-				color: $app-black;
+				color: $app-emphasis;
 				text-decoration: none;
 			}
 		}
@@ -114,17 +115,3 @@
 		}
 	}
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

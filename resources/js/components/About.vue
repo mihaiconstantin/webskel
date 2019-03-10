@@ -1,5 +1,5 @@
 <template>
-    <section id="app-about" class="r">
+    <section id="app-about" class="r" data-aos="fade">
 
         <div class="p col-12 text-left app-section-title" data-aos="fade-left">
             <h1 class="display-3">About</h1>
@@ -57,6 +57,7 @@
 
 
 <style lang="scss" scoped>
+    @import "../../sass/utils/variables";
     @import "../../sass/utils/mixins";
 
 
@@ -79,7 +80,7 @@
                 @include material_shadow_md;
                 border-radius: .5rem;
                 padding: 1rem;
-                background-color: rgba(255, 255, 255, 0.9);
+                background-color: rgba($app-white-light, 0.9);
 
                 .lead {
                     font-size: 1.2rem;
@@ -94,7 +95,3 @@
         }
     }
 </style>
-
-
-
-
