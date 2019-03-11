@@ -85,7 +85,7 @@ If you are interested in this project, please consider submitting a pull request
 
 1. Features: 
     - generate custom pages from the admin panel with specific page components
-    - carousel with images as an alternative to the current network canvas
+    - ~~carousel with images as an alternative to the current network canvas~~
     - component that can be used to display website members
     - contact form component with [Mailgun](https://www.mailgun.com/) API support
     - subscription component with email validation and cancellation
@@ -99,6 +99,7 @@ If you are interested in this project, please consider submitting a pull request
     - ~~add proper `og` tags to all pages~~
     - ~~set text line height to 1.9 for blog posts~~
     - ~~update the color scheme for higher color consistency~~
+    - ~~add Twitter meta tags~~
 
 ## License
 

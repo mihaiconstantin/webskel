@@ -140,17 +140,18 @@ const VueParticles = {
     install(Vue, options) {
         console.log("Installing `VueParticle`...");
         
-        // This function can be called within the `mounted` hook of every 
-        // componenet that requires the functionality of `particles.js`. 
+        // Store the global config so we can update it later, on-demand, from within whatever component.
+        Vue.prototype.$vueParticlesConfig = particlesJSConfig;
+
+        // This function can be called within the `mounted` hook of every component that requires the functionality of `particles.js`. 
         Vue.prototype.$initVueParticles = (id) => {
             console.log("Starting `particles.js`.");
             
             if(document.getElementById(id) != null) {
-                particlesJS(id, { ...particlesJSConfig, ...options });
+                particlesJS(id, { ...Vue.prototype.$vueParticlesConfig, ...options });
             } else {
               console.error(`'VueParticle' cannot be initialized with id '${id}' because it does not exist on the document.`);  
             }
-
         }
     }
 }

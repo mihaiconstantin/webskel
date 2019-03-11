@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class ChangeValueToTextInConfigsTable extends Migration
+class RenameColumnColorInCarouselsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class ChangeValueToTextInConfigsTable extends Migration
      */
     public function up()
     {
-        Schema::table('configs', function (Blueprint $table) {
-            $table->string('value', 1000)->change();
+        Schema::table('carousels', function (Blueprint $table) {
+            $table->renameColumn('color', 'background_color');
         });
     }
 
@@ -25,8 +25,8 @@ class ChangeValueToTextInConfigsTable extends Migration
      */
     public function down()
     {
-        Schema::table('configs', function (Blueprint $table) {
-            $table->string('value')->change();
+        Schema::table('carousels', function (Blueprint $table) {
+            $table->renameColumn('background_color', 'color');
         });
     }
 }

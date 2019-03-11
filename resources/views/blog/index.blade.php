@@ -1,15 +1,10 @@
 @extends('templates.master')
 
 
-@section('meta_seo')
-    <meta name="description" content="{{ $meta_description }}">
-    <meta name="keywords" content="{{ $meta_keywords }}">
-    
-    <meta property="og:url" content="{{ Request::url() }}">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ $title }}">
-    <meta property="og:description" content="{{ $og_description }}">
-    <meta property="og:image" content="{{ $og_image }}">
+@section('meta_seo')    
+    @include('partials.meta.meta')
+    @include('partials.meta.og')
+    @include('partials.meta.twitter')    
 @endsection
 
 
