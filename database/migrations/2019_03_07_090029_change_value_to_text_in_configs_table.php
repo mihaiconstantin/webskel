@@ -14,7 +14,7 @@ class ChangeValueToTextInConfigsTable extends Migration
     public function up()
     {
         Schema::table('configs', function (Blueprint $table) {
-            $table->string('value', 1000)->change();       
+            $table->string('value', 1000)->change();
         });
     }
 
@@ -26,7 +26,7 @@ class ChangeValueToTextInConfigsTable extends Migration
     public function down()
     {
         Schema::table('configs', function (Blueprint $table) {
-            $table->string('value')->change();     
+            $table->string('value')->change();
         });
     }
 }
