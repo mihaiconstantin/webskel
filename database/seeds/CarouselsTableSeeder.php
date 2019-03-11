@@ -27,7 +27,7 @@ class CarouselsTableSeeder extends Seeder
                 
                 'overlay_display' => 1,
                 'overlay_color' => '#005684',
-                'overlay_opacity' => .9,
+                'overlay_opacity' => .5,
 
                 'network_display' => 1,
                 'node_color' => '#7ab1e6',
