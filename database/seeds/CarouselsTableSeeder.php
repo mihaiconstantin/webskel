@@ -20,8 +20,22 @@ class CarouselsTableSeeder extends Seeder
                 'context' => 'home.index',
                 'title' => 'Lorem ipsum dolor sit',
                 'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cumque? Est totam, dolor inventore porro id hic mollitia suscipit neque similique praesentium quo dicta fuga perferendis optio culpa veritatis beatae. Iure impedit praesentium fuga quas, incidunt laboriosam maiores, distinctio quae dolore, blanditiis autem? Magni optio quo aspernatur, maiores molestiae autem!',
-                'image' => 'img/avatar.png',
-                'color' => '#1A2233'
+                'avatar' => 'img/avatar.png',
+
+                'image_display' => 1,
+                'image' => 'http://clipart-library.com/images/kTMKBG7Ec.jpg',
+                
+                'overlay_display' => 1,
+                'overlay_color' => '#005684',
+                'overlay_opacity' => .9,
+
+                'network_display' => 1,
+                'node_color' => '#7ab1e6',
+                'edge_color' => '#f8fafc',
+                'node_opacity' => .5,
+                'edge_opacity' => .4,
+                
+                'background_color' => '#1A2233'
             ]
         ]);
     }
