@@ -85,7 +85,7 @@ If you are interested in this project, please consider submitting a pull request
 
 1. Features: 
     - generate custom pages from the admin panel with specific page components
-    - ~~carousel with images as an alternative to the current network canvas~~
+    - &#x2705; ~~carousel with images as an alternative to the current network canvas~~
     - component that can be used to display website members
     - contact form component with [Mailgun](https://www.mailgun.com/) API support
     - subscription component with email validation and cancellation
@@ -94,12 +94,12 @@ If you are interested in this project, please consider submitting a pull request
 2. Fixes:
     - related to smooth scrolling: page *jumps* when clicking on a menu link that is already scrolled into viewport
     - related to blog cards: change from column-wise card order to row-wise
-    - ~~fix transition color on hover for projects and presentations~~
+    - &#x2705; ~~fix transition color on hover for projects and presentations~~
 3. Improvements:
-    - ~~add proper `og` tags to all pages~~
-    - ~~set text line height to 1.9 for blog posts~~
-    - ~~update the color scheme for higher color consistency~~
-    - ~~add Twitter meta tags~~
+    - &#x2705; ~~add proper `og` tags to all pages~~
+    - &#x2705; ~~set text line height to 1.9 for blog posts~~
+    - &#x2705; ~~update the color scheme for higher color consistency~~
+    - &#x2705; ~~add Twitter meta tags~~
 
 ## License
 
