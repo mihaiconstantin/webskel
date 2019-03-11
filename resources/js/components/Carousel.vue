@@ -34,6 +34,19 @@
         },
 
 
+        mounted() {
+            this.$nextTick(() => {
+                if (this.item.network_display == 1) {
+                    this.configureNetwork();
+                    this.startNetwork('carousel-canvas');
+
+                    // In case we want the nework to be on top of the overlay.
+                    // document.getElementsByClassName('particles-js-canvas-el')[0].style.zIndex = 0;  
+                }
+            });
+        },
+
+
         computed: {
             baseStyle() {
                 if(this.item.image_display == 0) {
@@ -54,6 +67,20 @@
                 }
             }
         },
+
+
+        methods: {
+            configureNetwork() {
+                this.$vueParticlesConfig.particles.color.value = this.item.node_color;
+                this.$vueParticlesConfig.particles.opacity.value = this.item.node_opacity;
+                this.$vueParticlesConfig.particles.line_linked.color = this.item.edge_color;
+                this.$vueParticlesConfig.particles.line_linked.opacity = this.item.edge_opacity;
+            },
+
+            startNetwork(id) {
+                this.$initVueParticles(id);
+            }
+        }
     }
 </script>
 
