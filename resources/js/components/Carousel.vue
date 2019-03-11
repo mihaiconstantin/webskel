@@ -1,10 +1,10 @@
 <template>
     <section id="app-carousel" class="r">
         
-        <div id="vue-particles" :style="{ backgroundColor: item.color }" class="r row">
+        <div id="carousel-canvas" class="b row" :style="[baseStyle, overlayStyle]" :class="{'carousel-overlay': this.item.overlay_display == 1}">
             
             <div class="p carousel-avatar drop">
-                <img :src="revealPath(item.image, '/storage')" alt="Avatar Image" draggable="false" class="img-fluid rounded-circle pulse">
+                <img :src="revealPath(item.avatar, '/storage')" alt="Avatar Image" draggable="false" class="img-fluid rounded-circle pulse">
             </div>
 
             <div class="p carousel-information d-none d-lg-block text-center fade-in-right">
@@ -31,7 +31,29 @@
 
         props: {
             item: Object
-        }
+        },
+
+
+        computed: {
+            baseStyle() {
+                if(this.item.image_display == 0) {
+                    return {
+                        'background-color': this.item.background_color
+                    }
+                } else {
+                    return {
+                        'background-image': `url("${this.item.image}")`,
+                    }
+                }
+            },
+
+            overlayStyle() {
+                return {
+                    '--overlay-color': this.item.overlay_color,
+                    '--overlay-opacity': this.item.overlay_opacity,
+                }
+            }
+        },
     }
 </script>
 
@@ -47,6 +69,10 @@
         padding-bottom: 0;
         user-select: none;
         
+        .carousel-avatar, .carousel-information {
+            z-index: 1;
+        }
+
         .carousel-avatar {
             position: absolute;
             top: 10%;
@@ -84,9 +110,28 @@
             border-radius: 200px 0 200px 0;
             color: $app-white;
         }
+
+        .carousel-overlay {
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                
+                // For backwards compatibility with IE 11.
+                background: $app-primary-dark;
+                opacity: .5;
+
+                // For modern browsers.
+                background: var(--overlay-color);
+                opacity: var(--overlay-opacity);
+            }
+        }
     }
 
-    #vue-particles {
+    #carousel-canvas {
         width: 100vw;
         height: 100vh;
         background-size: cover;
