@@ -56,7 +56,6 @@ const app = new Vue({
     mounted() {
         this.$nextTick(() => {
             this.$initVueAos();
-            this.$initVueParticles('vue-particles');
             this.$initVueSmoothScroll('app-navigation');
         });
     }
