@@ -198,3 +198,46 @@
         to {transform: rotate(359deg);}
     }
 }
+
+
+
+/*
+ * Bottom scroll arrow.
+ * Credits: https://github.com/michalsnik.
+ */
+
+.scroll-arrow {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+    
+    &:before {
+        content: '';
+        display: inline-block;
+        border-style: solid;
+        border-width: 0.25em 0.25em 0 0;
+        width: 60%;
+        height: 60%;
+    }
+}
+
+.scroll-arrow-direction-bottom.scroll-arrow::before {
+    transform: rotate(135deg);
+}
+
+.scroll-arrow-direction-top.scroll-arrow::before {
+    transform: rotate(-45deg);
+}
+
+.scroll-arrow-position-bottom.scroll-arrow {
+    bottom: 2rem;
+}
+
+.scroll-arrow-position-top.scroll-arrow {
+    top: 2rem;
+}
