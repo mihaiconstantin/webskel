@@ -58,3 +58,50 @@
         animation-direction: alternate;
     }
 }
+
+
+
+/*
+ * Slide scroll fade animation.
+ * Credits to: Peter McGriff (i.e., https://codepen.io/pmcgriff/pen/myKGZg).
+ */
+
+@keyframes slide-scroll-fade {
+    0% {
+        transform:translate(0, -20px); 
+        opacity: 0;
+    }
+    50% { 
+        opacity: 1;  
+    }
+    100% {
+        transform:translate(0, 20px); 
+        opacity: 0; 
+    }
+}
+
+.slide-scroll-fade {
+    animation: slide-scroll-fade 2s ease-in-out infinite;
+}
+
+
+
+/*
+* Slide scroll bounce animation.
+*/
+
+@keyframes slide-scroll-bounce {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.slide-scroll-bounce {
+    animation: slide-scroll-bounce 2s infinite;
+}
