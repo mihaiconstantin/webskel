@@ -1,19 +1,21 @@
 <template>
     <section id="app-carousel" class="r">
-        
         <div id="carousel-canvas" class="b row" :style="[baseStyle, overlayStyle]" :class="{'carousel-overlay': this.item.overlay_display == 1}">
             
             <div class="p carousel-avatar drop">
                 <img :src="revealPath(item.avatar, '/storage')" alt="Avatar Image" draggable="false" class="img-fluid rounded-circle pulse">
             </div>
 
+
             <div class="p carousel-information d-none d-lg-block text-center fade-in-right">
                 <h2 class="display-4">{{ item.title }}</h2>
                 <p class="lead">{{ item.content }}</p>
             </div>
 
-        </div>
 
+            <a href="#app-about" class="smooth-scrollable carousel-scroll scroll-arrow scroll-arrow-position-bottom scroll-arrow-direction-bottom slide-scroll-bounce" draggable="false"></a>
+            
+        </div>
     </section>
 </template>
 
@@ -129,13 +131,21 @@
         .carousel-information {
             @include material_shadow_md;
             position: absolute;
-            bottom: 2.5rem;
+            bottom: 4rem;
             width: 80%;
             left: 50%;
             margin-left: -40%;
             padding: 1.5rem 3rem;
             border-radius: 200px 0 200px 0;
             color: $app-white;
+        }
+
+        .carousel-scroll {
+            transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+            &:hover {
+                color: $app-accent;
+            }
         }
 
         .carousel-overlay {
