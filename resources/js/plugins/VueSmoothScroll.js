@@ -19,11 +19,19 @@ const VueSmoothScroll = {
     install(Vue, options) {
         console.log("Installing `VueSmoothScroll`...");
         
-        // This function can be called within the `mounted` hook of every 
-        // componenet that requires the functionality of `smoothscroll`. 
-        Vue.prototype.$initVueSmoothScroll = (id) => {
+        // This function can be called within the `mounted` hook of every component that requires the functionality of `smoothscroll`. 
+        Vue.prototype.$initVueSmoothScroll = (selector) => {
             console.log("Starting `smoothscroll`.");
-            const smoothscroll = new SmoothScroll(`#${id} a[href*="#"]`, { ...smoothScrollConfig, ...options });
+
+            let target = '';
+
+            if (Array.isArray(selector)) {
+                target = selector.map(element => `${element} a[href*="#"]`).join(", ");
+            } else {
+                target = `${selector} a[href*="#"]`;
+            }
+        
+            new SmoothScroll(target, { ...smoothScrollConfig, ...options });
         }
     }
 }
