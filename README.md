@@ -90,7 +90,7 @@ If you are interested in this project, please consider submitting a pull request
     - contact form component with [Mailgun](https://www.mailgun.com/) API support
     - subscription component with email validation and cancellation
     - add browsers checks and middleware to detect IE version and insert polyfill scripts (*low priority*)
-    - add an animated arrow to indicate scrolling on the carousel section
+    - &#x2705; ~~add bouncing arrow to indicate scrolling on the carousel section~~
 2. Fixes:
     - related to smooth scrolling: page *jumps* when clicking on a menu link that is already scrolled into viewport
     - related to blog cards: change from column-wise card order to row-wise
