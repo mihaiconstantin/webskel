@@ -9,6 +9,7 @@ use App\Models\About;
 use App\Models\Project;
 use App\Models\Publication;
 use App\Models\Presentation;
+use App\Models\Member;
 use App\Models\ContactInfo;
 
 
@@ -24,6 +25,7 @@ class HomeController extends Controller
             'projects'      => Project::activeFor('home.index'),
             'publications'  => Publication::activeFor('home.index'),
             'presentations' => Presentation::activeFor('home.index'),
+            'members'       => Member::activeFor('home.index'),
             'contact'       => ContactInfo::activeFor('home.index')
         );
         
