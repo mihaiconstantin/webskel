@@ -34,6 +34,8 @@
                 
                 <app-presentations :items="{{ $presentations }}" link-more="{{ $linkPresentations }}"></app-presentations>
 
+                <app-members :items="{{ $members }}" link-more="{{ $linkMembers }}"></app-members>
+                
                 <app-contact>
                     <template v-slot:info>
                         <app-contact-info :item="{{ $contact }}"></app-contact-info>
