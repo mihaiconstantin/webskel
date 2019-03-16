@@ -32,6 +32,10 @@ class LinksTableSeeder extends Seeder
                 'anchor' => '#app-presentations'
             ],
             [
+                'text' => 'Members',
+                'anchor' => '#app-members'
+            ],
+            [
                 'text' => 'Contact',
                 'anchor' => '#app-contact'
             ],
