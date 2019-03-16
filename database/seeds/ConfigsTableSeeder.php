@@ -61,6 +61,11 @@ class ConfigsTableSeeder extends Seeder
             ],
             [
                 'context' => 'all',
+                'key' => 'linkMembers',
+                'value' => '/members'
+            ],
+            [
+                'context' => 'all',
                 'key' => 'meta_description',
                 'value' => 'Lorem impsum...'
             ],
