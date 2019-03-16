@@ -38,7 +38,7 @@ class About extends Model
     ];
 
 
-    // Poisitions for the image within each subsection.
+    // Positions for the image within each subsection.
     public static $imagePositions = [
         'left',
         'right'
