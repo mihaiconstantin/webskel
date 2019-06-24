@@ -86,7 +86,7 @@ If you are interested in this project, please consider submitting a pull request
 1. Features: 
     - generate custom pages from the admin panel with specific page components
     - &#x2705; ~~carousel with images as an alternative to the current network canvas~~
-    - component that can be used to display website members
+    - &#x270B; component that can be used to display website members
     - contact form component with [Mailgun](https://www.mailgun.com/) API support
     - subscription component with email validation and cancellation
     - add browsers checks and middleware to detect IE version and insert polyfill scripts (*low priority*)
