@@ -91,6 +91,7 @@ If you are interested in this project, please consider submitting a pull request
     - subscription component with email validation and cancellation
     - add browsers checks and middleware to detect IE version and insert polyfill scripts (*low priority*)
     - &#x2705; ~~add bouncing arrow to indicate scrolling on the carousel section~~
+    - change the color of a section from the admin panel
 2. Fixes:
     - related to smooth scrolling: page *jumps* when clicking on a menu link that is already scrolled into viewport
     - related to blog cards: change from column-wise card order to row-wise
@@ -100,6 +101,8 @@ If you are interested in this project, please consider submitting a pull request
     - &#x2705; ~~set text line height to 1.9 for blog posts~~
     - &#x2705; ~~update the color scheme for higher color consistency~~
     - &#x2705; ~~add Twitter meta tags~~
+    - hide `more` button if the corresponding configuration key is undefined
+    - review and update the `$hidden` attributes for each model
 
 ## License
 
